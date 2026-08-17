@@ -1,0 +1,22 @@
+%nprocshared=16
+%mem=16GB
+%chk=split_basis_ecp.chk
+#p B3LYP/GenECP opt freq scf=tight int=ultrafine
+
+Split basis set + ECP template
+
+0 1
+C      0.000000   0.000000   0.000000
+H      0.000000   0.000000   1.090000
+Pd     2.000000   0.000000   0.000000
+
+C H 0
+6-31G(d)
+****
+Pd 0
+SDD
+****
+
+Pd 0
+SDD
+
