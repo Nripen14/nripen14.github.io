@@ -1,0 +1,22 @@
+! def2-TZVP TightSCF TRAH CASPT2K
+
+%casscf
+  nel 6
+  norb 6
+  mult 1
+  nroots 1
+  PTMethod FIC_CASPT2K
+  PTSettings
+    CASPT2_ishift 0.0
+    CASPT2_rshift 0.0
+    CASPT2_IPEAshift 0.0
+  end
+end
+
+%pal nprocs 8 end
+%maxcore 4000
+
+* xyz 0 1
+N 0.000000 0.000000 0.000000
+N 0.000000 0.000000 1.100000
+*
