@@ -1,0 +1,21 @@
+! cc-pVDZ Conv SCFConv10 UseSym
+
+%pal
+  nprocs 8
+end
+
+%maxcore 4000
+
+%mrcc
+  method "CCSDT"
+  ETol 9
+end
+
+* xyz 0 1
+F  0.000000  0.000000  0.000000
+H  0.000000  0.000000  0.950000
+*
+
+# Full iterative CCSDT through ORCA's MRCC interface.
+# IMPORTANT: the external MRCC program must be installed separately.
+# ORCA 6.1 states that this interface is for single-point energies (also usable for rigid scans/numerical frequencies) and does not currently support open-shell calculations.
