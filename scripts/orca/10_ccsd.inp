@@ -1,0 +1,16 @@
+! CCSD def2-TZVPP TightSCF
+
+%pal
+  nprocs 8
+end
+
+%maxcore 4000
+
+* xyz 0 1
+O  0.000000  0.000000  0.000000
+H  0.758602  0.000000  0.504284
+H -0.758602  0.000000  0.504284
+*
+
+# Canonical CCSD single-point template.
+# Use an appropriate reference and basis set; coupled-cluster methods assume dominant single-reference character.
