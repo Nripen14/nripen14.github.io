@@ -1,0 +1,43 @@
+%nprocshared=16
+%mem=16GB
+
+--Link1--
+%chk=singlet.chk
+#p UB3LYP/Def2SVP opt freq guess=mix stable=opt
+
+Singlet template
+
+0 1
+Fe 0.000000 0.000000 0.000000
+N  0.000000 0.000000 2.000000
+
+--Link1--
+%chk=doublet.chk
+#p UB3LYP/Def2SVP opt freq
+
+Doublet template
+
+0 2
+Fe 0.000000 0.000000 0.000000
+N  0.000000 0.000000 2.000000
+
+--Link1--
+%chk=triplet.chk
+#p UB3LYP/Def2SVP opt freq
+
+Triplet template
+
+0 3
+Fe 0.000000 0.000000 0.000000
+N  0.000000 0.000000 2.000000
+
+--Link1--
+%chk=quartet.chk
+#p UB3LYP/Def2SVP opt freq
+
+Quartet template
+
+0 4
+Fe 0.000000 0.000000 0.000000
+N  0.000000 0.000000 2.000000
+
