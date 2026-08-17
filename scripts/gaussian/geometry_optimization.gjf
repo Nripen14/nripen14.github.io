@@ -1,0 +1,14 @@
+%nprocshared=16
+%mem=16GB
+%chk=geometry_opt.chk
+#p B3LYP/6-31G(d) opt freq scf=tight int=ultrafine
+
+Geometry optimization + frequency
+
+0 1
+C      0.000000   0.000000   0.000000
+H      0.000000   0.000000   1.090000
+H      1.026719   0.000000  -0.363333
+H     -0.513360  -0.889165  -0.363333
+H     -0.513360   0.889165  -0.363333
+
