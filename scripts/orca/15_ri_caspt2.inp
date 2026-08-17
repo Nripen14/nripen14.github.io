@@ -1,0 +1,18 @@
+! def2-TZVP def2-TZVP/C TightSCF RI-CASPT2 TRAH
+
+%casscf
+  nel 6
+  norb 6
+  mult 1
+  nroots 1
+  TrafoStep RI
+  PTMethod FIC_CASPT2
+end
+
+%pal nprocs 8 end
+%maxcore 4000
+
+* xyz 0 1
+N 0.000000 0.000000 0.000000
+N 0.000000 0.000000 1.100000
+*
