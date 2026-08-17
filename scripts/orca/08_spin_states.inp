@@ -1,0 +1,18 @@
+# ORCA 6.1 spin-state examples.
+# Multiplicity is the second number after xyz.
+
+! TPSSh D4 def2-TZVP RIJCOSX TightSCF SP
+%pal nprocs 8 end
+%maxcore 2000
+
+# Singlet neutral: * xyz 0 1
+# Doublet neutral radical: * xyz 0 2
+# Triplet neutral: * xyz 0 3
+# Quartet neutral: * xyz 0 4
+# Cationic doublet: * xyz 1 2
+# Anionic doublet: * xyz -1 2
+
+* xyz 0 1
+O  0.000000  0.000000  0.000000
+O  0.000000  0.000000  1.210000
+*
