@@ -1,0 +1,17 @@
+%nprocshared=16
+%mem=16GB
+%chk=pes_scan.chk
+#p B3LYP/6-31G(d) opt=modredundant scf=tight int=ultrafine
+
+Relaxed PES scan template
+
+0 1
+C      0.000000   0.000000   0.000000
+C      1.500000   0.000000   0.000000
+H     -0.500000   0.900000   0.000000
+H     -0.500000  -0.900000   0.000000
+H      2.000000   0.900000   0.000000
+H      2.000000  -0.900000   0.000000
+
+B 1 2 S 20 0.05
+
