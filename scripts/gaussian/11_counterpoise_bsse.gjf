@@ -1,0 +1,15 @@
+%nprocshared=16
+%mem=16GB
+%chk=bsse.chk
+#p wB97XD/6-31+G(d,p) Counterpoise=2 SCF=(XQC,Tight)
+
+Counterpoise BSSE calculation for a two-fragment complex
+
+0 1 0 1 0 1
+O(Fragment=1)     0.000000  0.000000  0.000000
+H(Fragment=1)     0.758000  0.000000  0.504000
+H(Fragment=1)    -0.758000  0.000000  0.504000
+O(Fragment=2)     0.000000  0.000000  2.900000
+H(Fragment=2)     0.758000  0.000000  3.404000
+H(Fragment=2)    -0.758000  0.000000  3.404000
+
