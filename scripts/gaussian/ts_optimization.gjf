@@ -1,0 +1,14 @@
+%nprocshared=16
+%mem=16GB
+%chk=ts_opt.chk
+#p B3LYP/6-31G(d) opt=(ts,calcfc,noeigentest) freq scf=tight int=ultrafine
+
+Transition-state optimization template
+
+0 1
+C      0.000000   0.000000   0.000000
+H      0.000000   0.000000   1.100000
+H      1.000000   0.000000  -0.350000
+H     -0.500000   0.870000  -0.350000
+H     -0.500000  -0.870000  -0.350000
+
