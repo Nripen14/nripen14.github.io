@@ -1,0 +1,20 @@
+# ORCA 6.1 representative method/basis examples.
+# Uncomment ONE route line and adapt to your problem.
+
+! B3LYP D4 def2-TZVP RIJCOSX TightSCF SP
+# ! PBE0 D4 def2-TZVP RIJCOSX TightSCF SP
+# ! TPSSh D4 def2-TZVP RIJCOSX TightSCF SP
+# ! M06-2X def2-TZVP TightSCF SP
+# ! wB97X-D3 def2-TZVP TightSCF SP
+# ! r2SCAN-3c TightSCF SP
+
+%pal nprocs 8 end
+%maxcore 2000
+
+* xyz 0 1
+C  0.000000  0.000000  0.000000
+H  0.000000  0.000000  1.090000
+H  1.027000  0.000000 -0.363000
+H -0.513000 -0.889000 -0.363000
+H -0.513000  0.889000 -0.363000
+*
