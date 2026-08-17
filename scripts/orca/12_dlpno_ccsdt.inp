@@ -1,0 +1,16 @@
+! DLPNO-CCSD(T) def2-TZVPP def2-TZVPP/C TightPNO TightSCF
+
+%pal
+  nprocs 8
+end
+
+%maxcore 4000
+
+* xyz 0 1
+O  0.000000  0.000000  0.000000
+H  0.758602  0.000000  0.504284
+H -0.758602  0.000000  0.504284
+*
+
+# ORCA 6.1 DLPNO-CCSD(T) template using TightPNO settings.
+# NormalPNO is the default; TightPNO is often chosen for improved accuracy.
