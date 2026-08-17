@@ -1,0 +1,26 @@
+! CASSCF def2-TZVP TightSCF
+
+%pal
+  nprocs 8
+end
+
+%maxcore 3000
+
+%casscf
+  nel  6
+  norb 6
+  mult 1
+  nroots 1
+end
+
+* xyz 0 1
+C  0.000000  0.000000  0.000000
+H  0.000000  0.000000  1.090000
+H  1.027000  0.000000 -0.363000
+H -0.513000 -0.889000 -0.363000
+H -0.513000  0.889000 -0.363000
+*
+
+# ORCA 6.1 note:
+# Change nel/norb to the chemically justified active space.
+# For state-averaged calculations use mult/nroots (and optionally weights) in %casscf.
