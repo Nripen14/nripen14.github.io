@@ -1,4 +1,4 @@
-# Gaussian Scripts & Input Templates
+## Gaussian Scripts & Input Templates
 
 Reusable Gaussian input templates for common computational chemistry jobs. Replace the example geometry, charge/multiplicity, method, basis set, solvent, scan coordinates, and model layers as appropriate for your system.
 
