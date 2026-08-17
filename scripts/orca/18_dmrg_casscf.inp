@@ -1,0 +1,23 @@
+! def2-SVP TightSCF
+
+# Requires the external BLOCK DMRG program configured for ORCA.
+%casscf
+  nel 10
+  norb 10
+  mult 1
+  nroots 1
+  CIStep DMRGCI
+  ActConstrains 1
+end
+
+%pal nprocs 8 end
+%maxcore 4000
+
+* xyz 0 1
+C 0.000000 0.000000 0.000000
+C 1.400000 0.000000 0.000000
+H -0.600000 0.900000 0.000000
+H -0.600000 -0.900000 0.000000
+H 2.000000 0.900000 0.000000
+H 2.000000 -0.900000 0.000000
+*
