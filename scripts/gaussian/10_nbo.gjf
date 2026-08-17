@@ -1,0 +1,14 @@
+%nprocshared=16
+%mem=16GB
+%chk=nbo.chk
+#p B3LYP/6-31G(d) Pop=(NBO,Full) SCF=(XQC,Tight)
+
+NBO population analysis
+
+0 1
+C     0.000000  0.000000  0.000000
+H     0.000000  0.000000  1.090000
+H     1.027000  0.000000 -0.363000
+H    -0.513000 -0.889000 -0.363000
+H    -0.513000  0.889000 -0.363000
+
