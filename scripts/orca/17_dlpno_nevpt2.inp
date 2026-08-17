@@ -1,0 +1,18 @@
+! def2-TZVP def2/JK TightSCF TightPNO
+
+%casscf
+  nel 6
+  norb 6
+  mult 1
+  nroots 1
+  PTMethod DLPNO_NEVPT2
+  TrafoStep RI
+end
+
+%pal nprocs 8 end
+%maxcore 4000
+
+* xyz 0 1
+N 0.000000 0.000000 0.000000
+N 0.000000 0.000000 1.100000
+*
