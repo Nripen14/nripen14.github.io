@@ -1,0 +1,14 @@
+%nprocshared=16
+%mem=16GB
+%chk=oniom.chk
+#p ONIOM(B3LYP/6-31G(d):UFF)=EmbedCharge Opt
+
+Two-layer ONIOM geometry optimization template
+
+0 1 0 1 0 1
+C   0   0.000000  0.000000  0.000000 H
+O   0   1.200000  0.000000  0.000000 H
+C   0  -1.500000  0.000000  0.000000 L
+H   0  -2.000000  0.900000  0.000000 L
+H   0  -2.000000 -0.900000  0.000000 L
+
