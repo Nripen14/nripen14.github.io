@@ -1,0 +1,16 @@
+! CCSD(T) def2-TZVPP TightSCF
+
+%pal
+  nprocs 8
+end
+
+%maxcore 4000
+
+* xyz 0 1
+O  0.000000  0.000000  0.000000
+H  0.758602  0.000000  0.504284
+H -0.758602  0.000000  0.504284
+*
+
+# Canonical CCSD(T): CCSD plus perturbative triples.
+# ORCA 6.1 documentation recommends sufficiently large basis sets for high-accuracy work.
