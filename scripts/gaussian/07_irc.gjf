@@ -1,0 +1,7 @@
+%nprocshared=16
+%mem=16GB
+%chk=irc.chk
+#p B3LYP/6-31G(d) IRC=(CalcFC,MaxPoints=30,StepSize=10) Geom=AllCheck Guess=Read
+
+IRC from verified transition state
+
