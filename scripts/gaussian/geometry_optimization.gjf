@@ -1,7 +1,8 @@
 %nprocshared=16
 %mem=16GB
 %chk=geometry_opt.chk
-#p B3LYP/6-31G(d) opt freq scf=tight int=ultrafine
+#p B3LYP/6-31G(d) opt freq gfinput gfprint SCF=(maxcycle=220,tight)
+#Iop(6/7=3) SCRF=(SMD,solvent=methanol) EmpiricalDispersion=GD3BJ 5D 7F
 
 Geometry optimization + frequency
 
@@ -12,3 +13,12 @@ H      1.026719   0.000000  -0.363333
 H     -0.513360  -0.889165  -0.363333
 H     -0.513360   0.889165  -0.363333
 
+## Note ## 
+1. Any functionals or wavefunction-based methods can be replaced with B3LYP. 
+   Functionals: LSDA/BP86/M062X/MN15/MN15L/PBE1PBE/TPSSh/PBEPBE/W97XD/CAM-B3LYP/TPSSTPSS/M06/B3PW91
+   Wavefunction-based methods: HF/MP2/MP4/CCSD
+2. Any basis set can be replaced with 6-31G(d)
+   Basis set: 6-31+G*/6-311G+G**/LANL2DZ/SDD/Def2SVP/Def2TZVP/cc-PVDZ/cc-PVTZ/aug-cc-PVTZ
+3. Empirical dispersion can be GD3 or GD3BJ.
+4. SCRF=(PCM/CPCM/SMD,solvent=solventname) If solvent name not included then SCRF=(PCM/CPCM/SMD,Read) and 
+   write EPs=dielectric constant value end of the coordinates after single blank line
