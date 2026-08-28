@@ -1,0 +1,504 @@
+/* =========================================================
+   Nripen Khilari — Personal Academic Website
+   Shared stylesheet for all pages
+   ========================================================= */
+
+:root {
+    --navy: #0d3345;
+    --blue: #1f6e8c;
+    --sky: #eef6fa;
+    --paper: #ffffff;
+    --line: #d9e6ed;
+    --background: #f4f7fa;
+    --ink: #172433;
+    --muted: #607284;
+    --placeholder: #b35b00;
+    --shadow: 0 14px 36px rgba(20, 45, 65, 0.10);
+}
+
+/* -------------------------
+   Global styles
+   ------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background: var(--background);
+    color: var(--ink);
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+}
+
+.wrap {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* -------------------------
+   Header / profile banner
+   ------------------------- */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #092837,
+        #0d3b51 55%,
+        #185f79
+    );
+    color: #ffffff;
+    padding: 42px 0;
+}
+
+.home-hero {
+    padding: 65px 0;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 26px;
+    align-items: center;
+}
+
+.home-hero .hero-grid {
+    grid-template-columns: 210px 1fr;
+    gap: 38px;
+}
+
+.portrait {
+    width: 112px;
+    height: 112px;
+    border: 4px solid rgba(255, 255, 255, 0.55);
+    border-radius: 50%;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home-hero .portrait {
+    width: 200px;
+    height: 200px;
+    border-width: 5px;
+}
+
+.portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fallback {
+    display: none;
+    padding: 20px;
+    font-size: 0.82rem;
+}
+
+.hero h1 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 2.6rem;
+    line-height: 1.1;
+}
+
+.home-hero h1 {
+    font-size: 3.4rem;
+}
+
+.hero p {
+    color: #e6f1f6;
+}
+
+.hero .role {
+    color: #ffd78b;
+    font-weight: 600;
+}
+
+.home-hero .role {
+    margin-bottom: 4px;
+}
+
+.hero .tagline {
+    margin-top: 8px;
+    font-size: 1.08rem;
+}
+
+.profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.profile-links a {
+    padding: 8px 13px;
+    border: 1px solid rgba(255, 255, 255, 0.40);
+    border-radius: 25px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.profile-links a:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/* -------------------------
+   Navigation
+   ------------------------- */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(255, 255, 255, 0.97);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 4px 16px rgba(20, 40, 60, 0.06);
+}
+
+nav .wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav a {
+    padding: 8px 10px;
+    border-radius: 999px;
+    color: var(--navy);
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+    background: var(--sky);
+    color: var(--blue);
+}
+
+/* -------------------------
+   Main sections
+   ------------------------- */
+
+main {
+    padding: 28px 0;
+}
+
+.section,
+section {
+    max-width: 1060px;
+    margin: 0 auto 28px;
+    padding: 34px;
+    background: var(--paper);
+    border-radius: 22px;
+    box-shadow: var(--shadow);
+    scroll-margin-top: 80px;
+}
+
+h2 {
+    margin-bottom: 16px;
+    color: var(--navy);
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+h3 {
+    color: var(--navy);
+}
+
+.x {
+    color: var(--placeholder);
+    font-weight: 700;
+}
+
+/* -------------------------
+   Home page
+   ------------------------- */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 25px;
+}
+
+.facts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 18px;
+    margin-top: 18px;
+}
+
+.fact {
+    padding: 9px 0;
+    border-bottom: 1px dashed var(--line);
+}
+
+.fact strong {
+    display: block;
+    color: var(--navy);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.banner {
+    min-height: 220px;
+    border: 2px dashed #b9cdd8;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+    min-height: 220px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.card {
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: 17px;
+    background: #fbfdfe;
+}
+
+.card i {
+    color: var(--blue);
+    font-size: 1.5rem;
+}
+
+.card h3 {
+    margin: 8px 0;
+}
+
+.card p {
+    color: #516574;
+    font-size: 0.92rem;
+}
+
+.more {
+    padding: 18px;
+    border-radius: 15px;
+    background: #edf6fa;
+}
+
+.more a {
+    display: block;
+    margin: 7px 0;
+    color: var(--blue);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* -------------------------
+   Publications
+   ------------------------- */
+
+.year {
+    margin: 22px 0 10px;
+    color: var(--blue);
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 1.18rem;
+    font-weight: 600;
+}
+
+.pub {
+    margin: 10px 0;
+    padding: 15px 17px;
+    background: #f8fbfd;
+    border-left: 4px solid #cadde6;
+    border-radius: 10px;
+}
+
+.pub strong {
+    color: var(--navy);
+}
+
+.scholar {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 9px 14px;
+    border-radius: 999px;
+    background: var(--blue);
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* -------------------------
+   Resources and academic page
+   ------------------------- */
+
+.resource-card,
+.item {
+    margin: 15px 0;
+    padding: 20px;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: #f8fbfd;
+}
+
+.resource-card h3 {
+    margin-bottom: 7px;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 1.08rem;
+    font-weight: 600;
+}
+
+.resource-card ul {
+    padding-left: 20px;
+}
+
+.resource-card a {
+    color: var(--blue);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.item {
+    margin: 12px 0;
+    padding: 16px;
+    border-radius: 14px;
+}
+
+.subsection-title {
+    margin-top: 26px;
+}
+
+.cv {
+    display: inline-block;
+    padding: 9px 14px;
+    border-radius: 999px;
+    background: var(--blue);
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* -------------------------
+   Contact section
+   ------------------------- */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 20px;
+}
+
+.contact-card {
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: #f8fbfd;
+}
+
+.socials,
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.socials a,
+.social a {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--sky);
+    color: var(--blue);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+/* -------------------------
+   Footer
+   ------------------------- */
+
+footer {
+    padding: 22px;
+    background: #092837;
+    color: #d8e9f0;
+    text-align: center;
+}
+
+/* -------------------------
+   Responsive layout
+   ------------------------- */
+
+@media (max-width: 800px) {
+    .hero-grid,
+    .home-hero .hero-grid,
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .portrait,
+    .home-hero .portrait {
+        margin: 0 auto;
+    }
+
+    .profile-links {
+        justify-content: center;
+    }
+
+    .facts {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 520px) {
+    .home-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .section,
+    section {
+        margin: 0 12px 20px;
+        padding: 24px 18px;
+    }
+}
