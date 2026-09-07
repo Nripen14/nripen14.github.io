@@ -227,9 +227,10 @@ h3 {
     text-transform: uppercase;
 }
 
+.about-banner,
 .research-banner {
     width: 100%;
-    margin: 6px 0 28px;
+    margin: 22px 0 28px;
     border: 1px solid var(--line);
     border-radius: 18px;
     overflow: hidden;
@@ -237,11 +238,15 @@ h3 {
     box-shadow: 0 10px 26px rgba(20, 45, 65, 0.08);
 }
 
+.about-banner img,
 .research-banner img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    object-fit: contain !important;
 }
 
 .cards {
@@ -449,6 +454,7 @@ footer {
         padding: 24px 18px;
     }
 
+    .about-banner,
     .research-banner {
         margin-bottom: 22px;
         border-radius: 12px;
