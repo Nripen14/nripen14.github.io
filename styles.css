@@ -485,3 +485,36 @@ footer {
         border-radius: 16px;
     }
 }
+
+/* Academic journey: institution marks beside each education entry. */
+.academic-entry {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.academic-entry-text {
+    min-width: 0;
+}
+
+.institution-logo {
+    flex: 0 0 104px;
+    width: 104px;
+    height: 104px;
+    object-fit: contain;
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 8px;
+}
+
+@media (max-width: 520px) {
+    .academic-entry { gap: 12px; }
+    .institution-logo {
+        flex-basis: 72px;
+        width: 72px;
+        height: 72px;
+        padding: 5px;
+    }
+}
