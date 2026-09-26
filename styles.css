@@ -488,9 +488,9 @@ footer {
 
 /* Academic journey: institution marks beside each education entry. */
 .academic-entry {
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 104px;
     align-items: center;
-    justify-content: space-between;
     gap: 24px;
 }
 
@@ -499,7 +499,6 @@ footer {
 }
 
 .institution-logo {
-    flex: 0 0 104px;
     width: 104px;
     height: 104px;
     object-fit: contain;
@@ -510,9 +509,11 @@ footer {
 }
 
 @media (max-width: 520px) {
-    .academic-entry { gap: 12px; }
+    .academic-entry {
+        grid-template-columns: minmax(0, 1fr) 72px;
+        gap: 12px;
+    }
     .institution-logo {
-        flex-basis: 72px;
         width: 72px;
         height: 72px;
         padding: 5px;
